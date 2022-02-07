@@ -65,13 +65,13 @@ window.title("Pomodoro Timer")
 window.config(padx=100, pady=50, bg=YELLOW)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
-tomato_img = PhotoImage(file="/home/ltdt/vscode/pomodoro-start/tomato.png")
+tomato_img = PhotoImage(file="/PomodoroTimer/tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 30, "bold"))
 canvas.grid(column=1, row=1)
 
 mixer.init()
-mixer.music.load("/home/ltdt/vscode/pomodoro-start/Censor Beep Sound Effect.mp3")
+mixer.music.load("PomodoroTimer/Censor Beep Sound Effect.mp3")
 
 timer_label = Label(text="Timer", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 30, "bold"))
 timer_label.grid(column=1, row=0)
